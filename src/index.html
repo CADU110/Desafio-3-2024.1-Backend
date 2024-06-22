@@ -4,23 +4,32 @@
   <!--carregar arquivo css-->
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--ajuste de tela em smartphones-->
     <title>PokeApi</title>
     <!--titulo da aba da pagina-->
   </head>
   <body>
-    <div class="pageContent">
-      <h2 id="name">Nome do Pokemon</h2>
-      <img
-        id="img_sprite_front_default"
-        src="../assets/missingno.png"
-        alt="Imagem do Pokemon"
-      />
-      <div>
-        <button id="previous" onclick="previousPokemon()">Anterior</button>
-        <button id="next" onclick="nextPokemon()">Proximo</button>
+    <div class="galery">
+      <div class="card">
+        <div id="page" class="pageContent">
+          <h2 id="name">Nome do Pokemon</h2>
+          <img
+            id="img_sprite_front_default"
+            src="../assets/missingno.png"
+            alt="Imagem do Pokemon"
+          />
+          <span class="subtitulo">Tipo:</span>
+          <span id="tipo" class="texto">Tipo pokemon</span>
+          <div class="buttons-container">
+            <button id="previous" onclick="previousPokemon()"><i class="material-icons">arrow_back_ios</i></button>
+            <button id="next" onclick="nextPokemon()"><i class="material-icons">arrow_forward_ios</i></button>
+          </div>
+        </div>
       </div>
+
     </div>
   </body>
   <script src="script.js" type="text/javascript"></script>
