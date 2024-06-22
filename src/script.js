@@ -50,7 +50,7 @@ async function pegarPokemons(op){
       initt = poksDados.results.length-1;
     }
   }
-
+  
   const nameP = poksDados.results[initt].name;
   const urlP = poksDados.results[initt].url;
   const poksInfo = await fetch(urlP);
